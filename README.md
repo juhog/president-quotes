@@ -1,4 +1,4 @@
-# Trump Quotes
+# President Quotes
 Node.js practice project
 - Express
 - Express error handler
