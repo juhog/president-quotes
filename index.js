@@ -16,8 +16,8 @@ app.use(express.static('public'))
 app.use(helmet())
 
 // Form data stuff.
-app.use(express.json())                         // to support JSON-encoded bodies
-app.use(express.urlencoded({ extended: true })) // to support URL-encoded bodies
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 // Router of the main page.
 app.use('/', mainRouter)
