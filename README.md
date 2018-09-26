@@ -1,10 +1,12 @@
 # President Quotes
 Node.js practice project
-- Express
+- Express 4
 - Express error handler
+- Dotenv
 - Forms
 - View-Controller
 - EJS
-- Promises
+- Promise
+- Promise.all()
 - Nodemon
 - ESLint (Airbnb)
