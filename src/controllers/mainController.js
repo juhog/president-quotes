@@ -22,6 +22,7 @@ exports.mainPageSubmit = (req, res, next) => {
         nickname: value2.nickname,
         message: value2.message,
         image_url: value1,
+        name: name,
       })
     })
     .catch(error => next(error))
