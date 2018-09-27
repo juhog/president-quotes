@@ -3,11 +3,12 @@ require('dotenv').config()
 const express = require('express')
 const helmet = require('helmet')
 const mainRouter = require('./src/routes/mainRouter')
+const ejsLocals = require('ejs-locals')
 
 const app = express()
 
 app.set('views', './src/views/pages')
-app.set('view engine', 'ejs')
+app.set('view engine', ejsLocals)
 
 // Serve public files.
 app.use(express.static('public'))
