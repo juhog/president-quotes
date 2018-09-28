@@ -1,13 +1,17 @@
 require('dotenv').config()
 
 const express = require('express')
+const expressLayouts = require('express-ejs-layouts');
 const helmet = require('helmet')
 const mainRouter = require('./src/routes/mainRouter')
 
 const app = express()
 
-app.set('views', './src/views/pages')
+app.set('views', './src/views')
 app.set('view engine', 'ejs')
+app.set('layout', 'layouts/layout')
+
+app.use(expressLayouts);
 
 // Serve public files.
 app.use(express.static('public'))

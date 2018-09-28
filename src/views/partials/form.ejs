@@ -1,4 +1,6 @@
+<% locals.name = locals.name || '' %>
+
 <form action="/" method="post">
-    <input id="name" type="text" name="name" value="Asdsd1">
+    <input id="name" type="text" name="name" value="<%= name %>">
     <input type="submit" value="OK">
 </form>
