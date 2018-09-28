@@ -1,0 +1,10 @@
+<% layout('layout/page') -%>
+
+<h1><%= nickname %></h1>
+<p><%= message %></p>
+
+<img src="<%= image_url %>" />
+
+<hr>
+
+<%- partial('partials/form', {name: name}) %>

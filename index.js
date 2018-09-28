@@ -6,8 +6,9 @@ const mainRouter = require('./src/routes/mainRouter')
 
 const app = express()
 
-app.set('views', './src/views/pages')
-app.set('view engine', 'ejs')
+app.engine('ejs', require('ejs-locals'));
+app.set('views', __dirname + '/templates');
+app.set('view engine', 'ejs');
 
 // Serve public files.
 app.use(express.static('public'))
