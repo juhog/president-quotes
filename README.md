@@ -5,8 +5,8 @@ Node.js practice project
 - Dotenv
 - Forms
 - View-Controller
-- EJS
-- EJS layouts and partials (tag: [ejs-locals](https://github.com/juhog/president-quotes/tree/ejs-locals]))
+- ejs (Embedded JavaScript templates)
+- ejs-locals (EJS layouts and partials, tag [ejs-locals](https://github.com/juhog/president-quotes/tree/ejs-locals]))
 - Promise
 - Promise.all()
 - Nodemon
